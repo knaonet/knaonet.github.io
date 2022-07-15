@@ -1,0 +1,124 @@
+@font-face {
+	font-family: 'Space Mono';
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/spacemono/v6/i7dNIFZifjKcF5UAWdDRYER8QA.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Space Mono';
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/spacemono/v6/i7dSIFZifjKcF5UAWdDRYERE_FeaGw.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Space Mono';
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/spacemono/v6/i7dPIFZifjKcF5UAWdDRUEY.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Space Mono';
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url(https://fonts.gstatic.com/s/spacemono/v6/i7dMIFZifjKcF5UAWdDRaPpZYFI.ttf) format('truetype');
+}
+
+:root {
+	--fg-col: #FFF;
+	--bg-col: #131316;
+	--pri-col: #4D9093;
+	--sec-col: #DF2935;
+	--text-col: var(--fg-col);
+	--link-col: var(--fg-col);
+	--border: solid 0.16em var(--fg-col)
+}
+
+* {
+	font-family: 'Space Mono', monospace;
+	font-variant-ligatures: none
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-size: 1em;
+	margin: 0
+}
+
+a {
+	text-decoration: none
+}
+
+a:link {
+	color: #ff1493
+}
+
+a:visited {
+	color: #7F397A
+}
+
+a:hover {
+	color: #79B5B9
+}
+
+a:active {
+	color: #8f004c
+}
+
+.anchor:link {
+	color: var(--text-col)
+}
+
+.anchor:visited {
+	color: var(--text-col)
+}
+
+.anchor:hover {
+	color: var(--text-col)
+}
+
+.anchor:active {
+	color: var(--text-col)
+}
+
+body {
+	background-color: var(--bg-col);
+	color: var(--fg-col)
+}
+
+hr {
+	border: none;
+	border-top: var(--border);
+	margin: 0.85em auto;
+	width: calc(100% - 1em)
+}
+
+#container {
+	max-width: 800px;
+	margin-right: auto;
+	margin-left: auto
+}
+
+.block {
+	border-spacing: 0;
+	border-bottom: var(--border);
+	width: 100%
+}
+
+.block .header {
+	border: var(--border);
+	border-bottom: none;
+	padding: 0.5em;
+	margin: 0.5em;
+	text-align: center
+}
+
+.block .body {
+	border: var(--border);
+	border-bottom: none;
+	padding: 0.5em;
+	margin: 0.5em
+}
